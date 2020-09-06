@@ -15,7 +15,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/samsung/a20ub
+DEVICE_PATH := device/samsung/a20
 
 # Architecture
 TARGET_ARCH := arm64
