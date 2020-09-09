@@ -37,7 +37,7 @@ TARGET_USES_64_BIT_BINDER := true
 
 # Kernel Image
 BOARD_CUSTOM_BOOTIMG_MK := $(DEVICE_PATH)/mkbootimg.mk
-BOARD_KERNEL_CMDLINE := androidboot.hardware=exynos7884B androidboot.selinux=permissive buildvariant=eng
+BOARD_KERNEL_CMDLINE := androidboot.hardware=exynos7884B androidboot.selinux=permissive
 BOARD_KERNEL_CMDLINE += skip_override androidboot.fastboot=1
 BOARD_KERNEL_BASE := 0x10000000
 BOARD_KERNEL_PAGESIZE := 2048
