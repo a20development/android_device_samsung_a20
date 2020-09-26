@@ -32,4 +32,4 @@ AB_OTA_UPDATER := false
 # Recovery
 PRODUCT_PACKAGES += \
     fastbootd \
-    init.recovery.exynos7884.rc
+    init.recovery.exynos7884B.rc
