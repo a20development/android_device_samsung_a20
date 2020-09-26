@@ -1,0 +1,23 @@
+# EFS
+type app_efs_file, file_type, mlstrustedobject;
+type battery_efs_file, file_type;
+type bin_nv_data_efs_file, file_type;
+type carrier_efs_file, file_type, mlstrustedobject;
+type cpk_efs_file, file_type;
+type drm_efs_file, file_type;
+type imei_efs_file, file_type, mlstrustedobject;
+type iss_efs_file, file_type;
+type nv_core_efs_file, file_type;
+type otadm_efs_file, file_type;
+type pfw_efs_file, file_type, mlstrustedobject;
+type prov_efs_file, file_type;
+type retailmode_efs_file, file_type, mlstrustedobject;
+type sec_efs_file, file_type, mlstrustedobject;
+type sec_poc_file, file_type, mlstrustedobject;
+type tee_efs_file, file_type;
+type vaultkeeper_efs_file, file_type;
+type wifi_efs_file, file_type, mlstrustedobject;
+
+# OMR
+type omr_file, fs_type;
+allow omr_file labeledfs:filesystem associate;

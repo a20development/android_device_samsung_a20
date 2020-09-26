@@ -1,6 +1,5 @@
 #
-# Copyright (C) 2019 The Android Open Source Project
-# Copyright (C) 2019 The TWRP Open Source Project
+# Copyright (C) 2020 LineageOS
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,5 +17,6 @@
 LOCAL_PATH := $(call my-dir)
 
 ifeq ($(TARGET_DEVICE),a20)
-include $(call all-subdir-makefiles,$(LOCAL_PATH))
+subdir_makefiles=$(call first-makefiles-under,$(LOCAL_PATH))
+$(foreach mk,$(subdir_makefiles),$(info including $(mk) ...)$(eval include $(mk)))
 endif

@@ -1,4 +1,4 @@
-## TWRP device tree for Samsung Galaxy A20
+## LOS Recovery device tree for Samsung Galaxy A20
 
  Copyright (C) 2020 Velandy/YuMi Project @ vevelo
 

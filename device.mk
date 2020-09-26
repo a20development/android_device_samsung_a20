@@ -14,5 +14,22 @@
 # limitations under the License.
 #
 
-add_lunch_combo lineage_a20-eng
-add_lunch_combo lineage_a20-userdebug
+DEVICE_PATH := device/samsung/a20
+
+# Product VNDK & Ship
+PRODUCT_TARGET_VNDK_VERSION := 29
+PRODUCT_SHIPPING_API_LEVEL := 28
+
+# Init
+PRODUCT_PACKAGES += \
+    fstab.exynos7884B \
+    init.recovery.usb.rc \
+    ueventd.samsungexynos7884B.rc
+
+# No A/B
+AB_OTA_UPDATER := false
+
+# Recovery
+PRODUCT_PACKAGES += \
+    fastbootd \
+    init.recovery.exynos7884.rc
